@@ -204,7 +204,8 @@ article img {
 }
 
 .contact-section .contact-text {
-    width: 450px;
+    width: 90%;
+    max-width: 450px;
     margin: 0 auto;
     text-align: center;
 }
@@ -230,8 +231,13 @@ footer {
 }
 
 .footer-text {
-    width: 450px;
+    width: 90%;
+    max-width: 450px;
     margin: 0 auto;
+}
+
+.footer-text h2 span {
+    display: block;
 }
 
 footer ul {
@@ -261,6 +267,10 @@ footer ul {
 }
 
 @media(min-width: 800px) {
+    .footer-text h2 span {
+        display: inline;
+    }
+
     article {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
